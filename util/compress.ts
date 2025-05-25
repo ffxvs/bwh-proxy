@@ -13,7 +13,7 @@ async function compress(
 
   try {
     // Use Sharp library to compress the image
-    const { data, info } = await sharp(imagePath)
+    const { data, info } = await sharp(imagePath, { animated: true })
       .grayscale(grayscale)
       .toFormat(format, { quality, progressive: true, optimizeScans: true })
       .toBuffer({ resolveWithObject: true });
