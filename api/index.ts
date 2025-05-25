@@ -244,8 +244,8 @@ export default async function (
   // Replace specific pattern in the URL
   url = url.replace(/http:\/\/1\.1\.\d\.\d\/bmi\/(https?:\/\/)?/i, "http://");
 
-  let useWebp = false;
-  let grayscale = true;
+  let useWebp = true;
+  let grayscale = false;
   let quality = 40;
 
   if (
