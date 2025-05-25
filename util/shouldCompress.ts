@@ -1,5 +1,5 @@
-const MIN_COMPRESS_LENGTH = 1024;
-const MIN_TRANSPARENT_COMPRESS_LENGTH = 102400;
+const MIN_COMPRESS_LENGTH = 460800; // 450kb
+const MIN_TRANSPARENT_COMPRESS_LENGTH = 563200; //550kb
 
 function shouldCompress(
   imageType: string,
